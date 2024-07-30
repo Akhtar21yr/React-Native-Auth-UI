@@ -1,8 +1,8 @@
 import { createDrawerNavigator } from '@react-navigation/drawer'
-import HomeScreen from './HomeScreen'
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler'
 import {Text} from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import HomeScreen from './shop/HomeScreen'
 
 
 const Drawer = createDrawerNavigator()

@@ -27,6 +27,7 @@ const UserLoginScreen = () => {
                 position: 'top',
                 topOffset: 0
             })
+            navigation.navigate('UserPanelTab')
         }
         else {
             Toast.show({
