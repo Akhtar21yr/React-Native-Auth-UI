@@ -68,8 +68,8 @@ const RegistrationScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView>
+            <Toast config={toastConfig} />
             <ScrollView keyboardShouldPersistTaps='handled'>
-                <Toast config={toastConfig} />
                 <View style={{ marginHorizontal: 30 }}>
                     <View style={styles.inputWithLabel}>
                         <Text style={styles.labelText}>Name</Text>

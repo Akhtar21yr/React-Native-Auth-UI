@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import UserLoginScreen from "./app/screen/auth/UserLoginScreen"
 import RegistrationScreen from "./app/screen/auth/RegistrationScreen";
 import SendPasswordResetEmail from "./app/screen/auth/SendPasswordResetEmail";
-import ShopTab from "./app/screen/ShopTab";
+import ShopTab from "./app/screen/shop/ShopTab";
 import UserPanelTab from "./app/screen/UserPanelTab";
 
 
