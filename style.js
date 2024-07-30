@@ -22,12 +22,13 @@ const styles = StyleSheet.create({
 const toastConfig = {
     warning: ({ text1, props }) => (
         <View style={{ 
-            height: 30, 
+            height: 35, 
             width: '100%', 
             backgroundColor: 'orange', 
             justifyContent: 'center', 
             alignItems: 'center' ,
-            paddingTop:12.5
+            alignSelf:'center',
+            paddingTop:12
         }}>
             <Text>{text1}</Text>
             <Text>{props.uuid}</Text>
@@ -35,12 +36,12 @@ const toastConfig = {
     ),
     done: ({ text1, props }) => (
         <View style={{ 
-            height: 30, 
+            height: 35, 
             width: '100%', 
             backgroundColor: '#1affc6', 
             justifyContent: 'center', 
             alignItems: 'center', 
-            paddingTop:12.5
+            paddingTop:12
         }}>
             <Text>{text1}</Text>
             <Text>{props.uuid}</Text>

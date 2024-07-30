@@ -4,10 +4,13 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { styles, toastConfig } from '../../../style'
 import Toast from 'react-native-toast-message'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import { useNavigation } from '@react-navigation/native'
+
 
 
 
 const UserLoginScreen = () => {
+    navigation = useNavigation()
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
 
@@ -66,7 +69,7 @@ const UserLoginScreen = () => {
                             </TouchableOpacity>
                         </View>
                         <View style={{flex:1}}>
-                            <TouchableOpacity onPress={()=>{console.log('New Register Screen')}} style={{justifyContent:'flex-end'}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('Registration')}} style={{justifyContent:'flex-end'}}>
                                 <Text style={{fontWeight:'bold',color:'blue'}}>New User? Register</Text>
                             </TouchableOpacity>
                         </View>
